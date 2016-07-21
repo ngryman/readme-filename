@@ -2,6 +2,9 @@
 
 const fs = require('fs')
 
+// eslint-disable-next-line
+const PATTERN = /^readme\.(?:markdown|mdown|mkdn|md|textile|rdoc|org|creole|mediawiki|wiki|rst|asciidoc|adoc|asc|pod)/i
+
 module.exports = function readmeFilename(dir) {
   return new Promise((resolve, reject) => {
     dir = dir || '.'
@@ -9,7 +12,7 @@ module.exports = function readmeFilename(dir) {
     fs.readdir(dir, (err, files) => {
       if (err) return reject(err)
 
-      const filename = files.find(file => /^readme/i.test(file)) || null
+      const filename = files.find(file => PATTERN.test(file)) || null
       resolve(filename)
     })
   })
