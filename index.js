@@ -3,7 +3,7 @@
 const fs = require('fs')
 
 // eslint-disable-next-line
-const PATTERN = /^readme\.(?:markdown|mdown|mkdn|md|textile|rdoc|org|creole|mediawiki|wiki|rst|asciidoc|adoc|asc|pod)/i
+const PATTERN = /^readme\.(?:markdown|mdown|mkdn|md|textile|rdoc|org|creole|mediawiki|wiki|rst|asciidoc|adoc|asc|pod|txt)/i
 
 module.exports = function readmeFilename(dir) {
   return new Promise((resolve, reject) => {
