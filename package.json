@@ -25,7 +25,7 @@
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.15.1",
+    "ava": "^0.16.0",
     "babel-eslint": "^6.1.2",
     "codecov.io": "^0.1.6",
     "eslint": "^3.1.1",
