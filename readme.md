@@ -1,5 +1,7 @@
 # readme-filename
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/readme-filename.svg)](https://greenkeeper.io/)
+
 > Get a project readme file name.
 
 [![travis][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url]
